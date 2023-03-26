@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.MainFormController">
+   <children>
+      <Canvas fx:id="cnvMain" height="1080.0" onKeyPressed="#cnvMainOnKeyPressed" onMouseClicked="#cvVMainOnMouseClicked" onMouseDragged="#cnvMainOnMouseDragged" onMousePressed="#cnvMainOnMousePressed" width="1928.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox fx:id="vBox" alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="666.0" prefWidth="150.0" spacing="10.0" style="-fx-border-color: black; -fx-border-style: solid; -fx-border-width: 1; -fx-background-color: #F9F5E7;">
+         <children>
+            <Label fx:id="lblTab" maxHeight="-Infinity" maxWidth="-Infinity" onMouseDragged="#lblTabOnMouseDragged" onMouseEntered="#lblTabOnMouseEntered" onMouseExited="#lblTabOnMouseExited" onMousePressed="#lblTabOnMousePressed" onMouseReleased="#lblTabOnMouseReleased" prefHeight="23.0" prefWidth="148.0" style="-fx-background-color: black;" />
+            <Label fx:id="lblRectangle" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblRectangleOnMouseClicked" onMouseDragged="#lblRectangleOnMouseDragged" onMouseEntered="#lblRectangleOnMouseEntered" onMouseExited="#lblRectangleOnMouseExited" onMousePressed="#lblRectangleOnMousePressed" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/rectangle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblRoundedRectangle" alignment="CENTER" onMouseClicked="#lblRoundedRectangleOnMouseClicked" onMouseEntered="#lblRoundedRectangleOnMouseEntered" onMouseExited="#lblRoundedRectangleOnMouseExited" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/rounded-rectangle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblCircle" alignment="CENTER" onMouseClicked="#lblCircleOnMouseClicked" onMouseEntered="#lblCircleOnMouseEntered" onMouseExited="#lblCircleOnMouseExited" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblOval" alignment="CENTER" contentDisplay="BOTTOM" onMouseClicked="#lblOvalOnMouseClicked" onMouseEntered="#lblOvalOnMouseEntered" onMouseExited="#lblOvalOnMouseExited" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ellipse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblPencil" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblPencilOnMouseCliked" onMouseEntered="#lblPencilOnMouseEntered" onMouseExited="#lblPencilOnMouseExited" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/pencil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblText" alignment="CENTER" contentDisplay="CENTER" onInputMethodTextChanged="#lblTextOnInputMethodTextChange" onMouseClicked="#lblTextOnMouseClicked" onMouseEntered="#lblTextOnMouseEnterd" onMouseExited="#lblTextOnMouseExited" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/font.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblEraser" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#lblEraserOnMouseClicked" onMouseEntered="#lblEraserOnMouseEntered" onMouseExited="#lblEraserOnMouseExited" prefHeight="50.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/eraser (1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblStroke" alignment="CENTER" contentDisplay="BOTTOM" onMouseEntered="#lblStrokeOnMouseEntered" onMouseExited="#lblStrokeOnMouseExited" prefHeight="58.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;" text="Stroke">
+               <graphic>
+                  <ColorPicker fx:id="clpStroke" onAction="#clpStrokeOnAction" prefHeight="26.0" prefWidth="100.0" promptText="Stroke" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblFill" alignment="CENTER" contentDisplay="BOTTOM" onMouseEntered="#lblFillOnMouseEntered" onMouseExited="#lblFillOnMouseExited" prefHeight="58.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-background-color: #F8EAD8;" text="Fill" textOverrun="CLIP">
+               <graphic>
+                  <ColorPicker fx:id="clpFill" onAction="#clpFillOnAction" prefHeight="26.0" prefWidth="100.0" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" top="3.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="lblType" layoutX="426.0" layoutY="217.0" />
+   </children>
+</AnchorPane>
